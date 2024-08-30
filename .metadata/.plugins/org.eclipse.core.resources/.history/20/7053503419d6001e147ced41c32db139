@@ -1,0 +1,23 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		Book book1 = new Book();
+		book1.orderNumber = 1;
+		book1.leftNumber = 1000;
+				
+		System.out.println(Book);
+		
+		Book book2 = new Book();
+		book2.orderNumber = 2;
+		book2.leftNumber = 1000;
+		
+		System.out.println(Book);
+	}
+
+}
+

@@ -1,0 +1,33 @@
+package day4;
+
+public class Person {
+	// Field
+	private static String name; // 아무도 수정 못하게
+	private static int age; // 아무도 수정 못하게
+	
+	// Constructor (새로 생성자를 지정해주는 순간, 기본 생성자는 사라진다.)
+	public Person (String name, int age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+	// Getter
+	public static String getName() {
+		return name;
+	}
+	
+	public static int getAge() {
+		return age;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Person []";
+	}
+
+	
+	
+	
+}

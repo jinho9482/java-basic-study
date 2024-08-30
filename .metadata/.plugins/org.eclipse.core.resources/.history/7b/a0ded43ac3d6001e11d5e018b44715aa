@@ -1,0 +1,32 @@
+package day4;
+
+public class Person {
+	// Field
+	private int id; // 사람별로 구분할 수 있게 구분자가 필요하다.
+	private String name; // 아무도 수정 못하게
+	private int age; // 아무도 수정 못하게
+	public static int index = 0; // JVM은 Person.index 를 먼저 본다. Main 전에
+	
+	// Constructor (새로 생성자를 지정해주는 순간, 기본 생성자는 사라진다.)
+	public Person (String name, int age) {
+		this.name = name;
+		this.age = age;
+		id = index++; // 유저가 관리할 필요 없다.
+	}
+
+
+	@Override
+	public String toString() {
+		return "Person [id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+
+	// Getter
+	public String getName() {
+		return name;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+}

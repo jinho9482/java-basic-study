@@ -1,0 +1,26 @@
+package day1;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// String
+//		int i = 0;
+//		// c 언어
+//		char c = 'a'; // 한 글자
+//		String str = "man"; // 문자열
+//		String str1 = "m";
+//		// a 다음의 문자를 찾고 싶다.
+//		String str2 = ""; // str2 = ""과는 다르다.
+//		Byte b = null;
+//		String str3 = "3";
+//		Integer j = 2;
+//		System.out.println("1 + 1 = 2");
+//		int x = 1;
+//		int y = 1;
+//		System.out.println("1 + 1 = " + (x+y));
+		char c = 'a'
+		System.out.println(c);
+		
+	}
+
+}

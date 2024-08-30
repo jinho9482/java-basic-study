@@ -1,0 +1,17 @@
+package day1;
+
+public class Test6 {
+
+	public static void main(String[] args) {
+		// If i is even, print "this is even number"
+		// If i is odd, print "this is odd number"
+		
+		int i = 7;
+		if (i%2 == 0) {
+			System.out.println("짝수 입니다.");
+		} else {
+			System.out.println("홀수 입니다.");
+		}
+	}
+
+}

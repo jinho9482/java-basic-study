@@ -1,0 +1,6 @@
+package data;
+
+public class Data {
+	public static Person[] persons = new Person[10];
+	public static int index = 0;
+}

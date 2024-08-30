@@ -1,0 +1,15 @@
+package day1;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// String
+		int i = 0;
+		// c 언어
+		char c = 'a'; // 한 글자
+		String str = "man"; // 문자열
+		System.out.println("str");
+
+	}
+
+}

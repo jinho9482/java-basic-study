@@ -1,0 +1,32 @@
+1710225781155	Rename type 'Database'
+1710228017226	Rename type 'Dto'
+1710228596132	Rename type 'Dao'
+1710228601266	Rename type 'AccountDao'
+1710228608518	Rename type 'BankDao'
+1710318981263	Delete element
+1710318993241	Delete element
+1710318994154	Delete element
+1710318994788	Delete element
+1710318995781	Delete element
+1710319017458	Delete element
+1710319052963	Delete element
+1710319111829	Rename type 'accountService'
+1710319115125	Rename type 'creditService'
+1710319117871	Rename type 'loanService'
+1710319200866	Delete element
+1710319201718	Delete element
+1710319202266	Delete element
+1710319202725	Delete element
+1710319203104	Delete element
+1710319486727	Delete element
+1710319489630	Delete element
+1710319779732	Rename type 'Account'
+1710319783176	Rename type 'Bank'
+1710319787234	Rename type 'TransactionHistory'
+1710319791816	Rename type 'Employee'
+1710319799950	Rename type 'User'
+1710320361665	Delete element
+1710324168915	Delete element
+1710324176303	Delete element
+1710324228156	Delete element
+1710324265018	Rename type 'Path'

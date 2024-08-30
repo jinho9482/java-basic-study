@@ -1,0 +1,24 @@
+package day4;
+
+import java.util.Arrays;
+
+public class ArrayStudy3 {
+
+	public static void main(String[] args) {
+		int[] arr = {3,1,2}; 	// new int[3];
+		int[][] arr1 = {
+				{3,1,2},
+				{6,4,5},
+				{9,8,7}
+				}; // new int[3][3];
+		
+		Arrays.sort(arr);
+		System.out.println(Arrays.toString(arr));
+		System.out.println(Arrays.toString(arr1));
+		
+//		Arrays.sort(arr1);
+		
+
+	}
+
+}

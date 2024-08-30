@@ -1,0 +1,53 @@
+package day2;
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// Q1. 피티 체조 팔벌려 높이 뛰기
+//		123 1	
+//		123 2 ..
+//		15회
+//		마지막 구호 x
+		
+//		123 변수 설정
+//		123 뒤에 \t + 갯수 + \n (14번 반복)
+//		마지막에는 123 변수만 호출
+		
+//		String call = "123";
+//		for (int i = 1; i < 15; i++) {
+//			call += "\t" + i + "\n123";
+//		}
+//		System.out.print(call);
+		
+		
+		
+//		Q2. a (+*-) x = b
+//		조건1. 더하기 보다 곱하기가 먼저다.
+//		조건2. x는 1<= x <=10
+//		조건3. 2 <= a <= 10
+//		조건을 만족하는 수식 및 x값 구하기
+//		input) a=4, b=6
+//		output) 더하기, x=?
+//		input) a=4. b=8
+//		output) 곱하기, x=?
+		
+//		Declare variable a,b
+//		if * case is integer and x meet the condition above
+//		print * and x
+//		else if + case is integer and x meet the condition above
+//		print + and x
+//		else
+//		print - and x
+//		
+		int a = 2;
+		int b = 8;
+		if (b%a == 0 && b/a >= 1 && b/a <=10) {
+			System.out.println("곱하기 " + (b/a));
+		} else if ((b-a)>=2 && (b-a)<=10) {
+			System.out.println("더하기 " + (b-a));
+		} else {
+			System.out.println("Doesn't exist");
+		}
+	}
+
+}

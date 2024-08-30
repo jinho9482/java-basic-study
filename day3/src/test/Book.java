@@ -1,0 +1,21 @@
+package test;
+// 책 제목, 저자, 가격, 재고 수량
+public class Book {
+	private String title = "Harry Potter"; 
+	private String author = "J.K.Rolling";
+	private Integer price = 15000;
+	private static Integer leftNumber = 1000;
+	public static Integer orderNumber = 0;
+	
+
+	public Book(Integer orderNumber) {
+		this.orderNumber += orderNumber;
+		this.leftNumber -= orderNumber;
+	}
+	
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", leftNumber=" + leftNumber
+				+ ", orderNumber=" + orderNumber + "]";
+	}
+}

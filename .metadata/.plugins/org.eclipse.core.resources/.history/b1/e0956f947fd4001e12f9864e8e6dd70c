@@ -1,0 +1,15 @@
+package day1;
+
+public class Test7 {
+
+	public static void main(String[] args) {
+		// 반복문
+//		for (선언; 조건; 증감) {
+//			System.out.println("으샤");
+//		}
+		for (int i = 0; i < 10; i ++) {
+			System.out.println("으샤");
+		}
+	}
+
+}

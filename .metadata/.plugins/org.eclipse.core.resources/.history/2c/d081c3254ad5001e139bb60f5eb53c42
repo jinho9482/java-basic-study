@@ -1,0 +1,36 @@
+package day2;
+// 객체란
+// oop (object-oriented programming)
+public class Test4 {
+
+	public static void main(String[] args) {
+//		String name = "김자바";
+//		int age = 20;
+//		int gender = 1;
+		// 위의 내용을 하나의 person으로 묶고 싶다.
+		// 사람 한 명 만듦
+		Person person = new Person(); // 변수 type 변수 명 = 값
+		person.name = "김자바";
+		person.age = 20;
+		person.gender = 1;
+//		객체에 있는 메인이라는 메서드를 인자값"ssm"을 가지고 호출했다. 
+//		person.main("ssm");
+//		person.sound();
+//		person.stringGender();
+//		System.out.println(person.stringGender());
+		System.out.println(person.isMan());
+//		System.out.println(person.name + person.age + person.stringGender());
+//		System.out.println(person.name + person.age + person.gender); 
+		// 다수의 변수들을 하나로 묶임
+		
+		Person person1 = new Person();
+		person1.name = "이코딩";
+		person1.age = 22;
+		person1.gender = 2;
+//		person1.sound();
+		System.out.println(person.isMan());
+//		System.out.println(person1.name + person1.age + person1.gender); 
+//		System.out.println(person.name + person.age + person.gender); 
+	}
+
+}

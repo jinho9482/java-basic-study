@@ -1,0 +1,6 @@
+package test;
+
+public class Book {
+	public String title;
+	int price;
+}

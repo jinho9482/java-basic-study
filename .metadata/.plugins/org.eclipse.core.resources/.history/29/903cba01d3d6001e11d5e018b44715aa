@@ -1,0 +1,22 @@
+package day4;
+
+public class ArrayStudy2 {
+
+	public static void main(String[] args) {
+		int[][] map = new int[3][5];
+		map[1][1] = 5;
+		for(int i=0; i < map.length; i++) { 			// 먼저 오는 것 기준, length = 3
+			for(int j = 0; j < map[0].length; j++) {	// map.length = 3으로 고정
+				System.out.print(map[i][j] + "\t");
+			}
+			System.out.println();
+		}	
+		for(int[] m : map) {					// 한 개 행
+			for (int i : m) {					// 한 개 행의 한 개 숫자
+				System.out.print(i + "\t");
+			}
+			System.out.println();
+		}
+	}
+
+}

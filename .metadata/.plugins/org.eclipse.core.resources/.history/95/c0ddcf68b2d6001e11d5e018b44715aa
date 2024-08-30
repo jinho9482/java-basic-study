@@ -1,0 +1,8 @@
+package day4;
+
+public class Person {
+	public static String[] names = new String[10];
+	public static String[] ages = new String[10];
+	
+	
+}

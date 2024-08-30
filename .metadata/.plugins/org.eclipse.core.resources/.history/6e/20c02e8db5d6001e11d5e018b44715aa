@@ -1,0 +1,47 @@
+package day4;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ArrayStudy {
+
+	public static void main(String[] args) {
+		// scanner, static, 객체 접근제어자(public, private...)
+//		<Question>
+//		사람 10명을 입력 받는 것을 만들어보자.
+//		사람이라는 것은 이름과 나이가 존재한다.
+//		서로 동명이인 존재 할 수 있다.
+//		마지막에는 열 명 출력
+//		동명이인이 있으면 이것도 출력
+
+//		<Solution>
+//		10명 반복, 사람 [], scanner
+//		서로 동명이인 존재할 수 있다. -> 서로 구분이 가능해야 한다. -> 뭔가 확실한 구분이 필요
+//		마지막에는 열명 출력, 반복문 toString
+		
+		
+		Scanner input = new Scanner(System.in);
+		Person[] people = new Person[3];	//Object[] arr = new Object[10] -> 최상위에 있는 게 Object
+//  		System.out.println(persons[0]); // null
+		for (int i = 0; i < 3; i++) {
+			System.out.println("이름 입력 : ");
+			String name = input.nextLine();
+			System.out.println("나이 입력 : ");
+			String age = input.nextLine();
+//			person.setName(name);	// 이것도 간접적으로 바꿀 수 있다. -> 생성할 때 부터 넣어준다.
+			String strAge = input.nextLine();
+//			person.setAge(Integer.parseInt(strAge)); // String을 int로 바꿀 수 없기 때문에
+			Person person = new Person(name, Integer.parseInt(strAge));
+			people[i] = person;
+		}
+		for (int i = 0; i < 3; i++) {
+			System.out.println(people);
+		}
+		
+		
+		
+
+
+	}
+
+}

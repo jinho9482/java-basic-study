@@ -1,0 +1,12 @@
+package test;
+// 책 제목, 저자, 가격, 재고 수량
+public class Book {
+	public String title;
+	public String author;
+	public Integer price;
+	private Integer leftAmount;
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", leftAmount=" + leftAmount + "]";
+	}	
+}

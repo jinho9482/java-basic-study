@@ -1,0 +1,15 @@
+package day3;
+
+public class Person {
+	// Field
+	String name;
+	int age;
+	// 실행시킬 수 있는 함수  --> 메소드
+	public void print() {
+		System.out.println(name + " " + age);
+	}
+	public Person() {
+		name = "김자바";
+		age = 1;
+	}
+}

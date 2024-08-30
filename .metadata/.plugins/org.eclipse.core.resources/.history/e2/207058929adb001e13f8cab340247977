@@ -1,0 +1,60 @@
+package ThreadPractice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class SpaceCraftThread extends Thread implements Runnable {
+//	1. 우주선 4개를 날린다.
+//	2. 시작 속도를 랜덤으로 받는다..
+//	3. 가속도가 주어진다.(초마다 속도 증가)
+//	4. 우주 탈출 속도 이상이면 "탈출"
+//	5. 대기권의 두께가 1000km이다. 즉, 우주선 속도 = 누적 이동 거리가 1000km에 도달했을 때의 속도
+//	6. 이 두께에 도달했을 때, 우주선 속도 <= 우주 탈출 속도, "탈출 실패" 출력, 우주선 속도 <= 우주 탈출 속도, "탈출 성공" 출력
+//  처음 받고 고정되는 변수 : 초기 속도
+//	계속 변하는 변수 : 현재 속도(가속도 만큼 증가), 이동 거리 (누적), 시간(1초씩 증가) 
+//	상수 : 가속도 = 1km/s, 대기권 두께 = 1000km, 지구 궤도 탈출 속도 = 42km/s
+//	이동 거리 > 1000km 일 때, 속도 > 42km/s 이면 "탈출 성공", 아니면 "탈출 실패"
+//  입력 받는 것으로 바꿔보자.	
+	int acceleration = (int) (Math.random()*5+1); // 우주선마다 가속도가 다름, 1km/s <= 가속도 < 6km/s
+	int AIR = 1000; // 대기권 두께
+	int ESCAPEVELOCITY = 42; // 우주 탈출 속도
+	int initialVelocity = 0; // 
+	int time = 0;
+	int currentVelocity = 0;
+	int altitude = 0;
+	int leftDistance = 1000;
+
+	String name; // 우주선 이름
+	List list;
+	static int count = 0;
+	
+	public SpaceCraftThread(String name, List<String> list) {
+		this.name = name;
+		this.list = list;
+	}
+	
+	@Override
+	public void run() {
+		while (altitude < 1000) {
+			if (currentVelocity > 42) {
+				System.out.println(name + " 탈출 성공!!!");
+				list.add(name);
+				break;
+			}
+			try {
+				Thread.sleep(1000); // 1000ms (1s) 동안 thread 닫힘
+				time++; // 1초마다 출력
+				currentVelocity = initialVelocity + acceleration * time; // v = v0+at
+				altitude = currentVelocity*time + (acceleration*time*time/2); // h = vt + (at^2)/2
+				leftDistance = AIR - altitude;
+				System.out.println(name + " 현재 속도: " + currentVelocity + "km/s, 현재 고도: " + altitude + "km, 진행 시간: " + time + "초, 대기권 탈출까지 남은 거리: " + leftDistance + "km");
+				
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}	
+		}
+		++count;
+		System.out.println(count);
+	}
+}

@@ -1,0 +1,39 @@
+package day2;
+
+public class Test3 {
+// 반복문 3가지 종류가 존재
+// for
+// while
+// do while
+	public static void main(String[] args) {
+//		for (int i = 0; i < 5; i++) {
+//			System.out.println(i);
+//		}
+//		(조건이 맞는) 동안에
+//		int i = 1;
+//		while(i++ <= 5) {
+//			System.out.println(i);
+//		}
+//		do{ ~ }while(조건) 
+//		{ ~ } 해라. (조건) 동안에
+//		int i = 0;
+//		do {
+//			System.out.println(i);
+//			i += 2;
+//		} while (i <= 5);
+//		System.out.println(i);
+//	
+//	--------------------------------------------------------------------
+//		1..10 (3,6,9빼고)
+		for (int i = 1; i <= 10; i++) {
+			if (i % 3 == 0) continue; // 3의 배수 뛰어넘기
+			System.out.println(i);
+		}
+		int i=0;
+		while (i < 10) {
+			i++
+			if (i % 3 == 0) continue;
+			System.out.println(i);
+		}
+	}
+}

@@ -1,0 +1,13 @@
+package day3;
+
+public class Main {
+	// Java는 항상 main method만 실행한다. 항상 main이 시작점이다.
+	public static void main(String[] args) {
+		// 내가 묶고 싶은 변수들을 묶을 수 있다. 객체로
+		Person person = new Person();
+		person.age = 10;
+		person.name = "김자바";
+		System.out.println(person.age +  person.name);
+	}
+
+}

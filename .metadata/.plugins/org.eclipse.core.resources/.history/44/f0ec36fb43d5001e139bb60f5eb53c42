@@ -1,0 +1,13 @@
+package day2;
+// person object (ÇÏ³ª·Î ¹­À½)
+public class Person {
+	String name;
+	int age;
+	int gender;
+	int height;
+	public void main(String arg) {
+		int i = 1;
+		System.out.println(i);
+	}
+	
+}

@@ -1,0 +1,20 @@
+package day2;
+// person object (하나로 묶음)
+public class Person {
+	// 변수 : field
+	String name;
+	int age;
+	int gender;
+	int height;
+	
+	// 이런 형태 : method4
+//	나중에    void  name(argument)
+	public void main(String arg) {
+		int i = 1;
+		System.out.println(i);
+	}
+	public void sound() {
+		System.out.println("한국말");
+	}
+	
+}

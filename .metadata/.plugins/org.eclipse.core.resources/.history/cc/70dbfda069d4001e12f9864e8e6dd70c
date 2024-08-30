@@ -1,0 +1,22 @@
+package day1;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// String
+		int i = 0;
+		// c 언어
+		char c = 'a'; // 한 글자
+		String str = "man"; // 문자열
+		String str1 = "m";
+		// a 다음의 문자를 찾고 싶다.
+		String str2 = ""; // str2 = ""과는 다르다.
+		Byte b = null;
+		
+		Short s = null;
+		Long l = null;
+		int i1 = 10;
+		System.out.println(str2.length);
+	}
+
+}

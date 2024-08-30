@@ -1,0 +1,16 @@
+package test;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book book1 = new Book();
+		book1.title = "Harry Potter";
+		book1.author = "J.K.Rolling";
+		book1.price = 15000;
+		book1.OrderNumber = 1;
+				
+		System.out.println(book1);
+	}
+
+}

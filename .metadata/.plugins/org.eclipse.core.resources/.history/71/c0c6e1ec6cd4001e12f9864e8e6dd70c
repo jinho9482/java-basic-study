@@ -1,0 +1,15 @@
+package day1;
+
+public class Test4 {
+
+	public static void main(String[] args) {
+		// 1 + 1 = 2를 똑같이 출력하라!
+		System.out.println("1 + 1 = 2");
+		int a = 1;
+		int b = 1;
+		System.out.println(a + " + " + b " = " + (a+b));
+		
+
+	}
+
+}

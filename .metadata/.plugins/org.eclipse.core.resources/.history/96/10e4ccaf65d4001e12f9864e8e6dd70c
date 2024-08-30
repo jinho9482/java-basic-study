@@ -1,0 +1,20 @@
+package day1;
+
+public class Test3 {
+
+	public static void main(String[] args) {
+		// String
+		int i = 0;
+		// c 언어
+		char c = 'a'; // 한 글자
+		String str = "man"; // 문자열
+		String str1 = "m";
+		// a 다음의 문자를 찾고 싶다.
+		char c1 = 109;
+		System.out.println((int) c);
+		System.out.println((int) str1);
+		System.out.println(c1);
+
+	}
+
+}

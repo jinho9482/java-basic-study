@@ -1,0 +1,13 @@
+package day1;
+
+
+// 주석 : 코드에 영향이 없고, 뭔가 필요할 때 사용
+
+public class Test2 {
+
+	public static void main(String[] args) {
+		// Say hello
+		System.out.println("Hello");
+	}
+
+}
